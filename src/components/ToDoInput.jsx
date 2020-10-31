@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { addToDo, Add_TODO } from '../redux/actions';
+import { addToDo } from '../redux/actions';
 import { v1 as uuid } from 'uuid';
 import { useDispatch } from 'react-redux';
 
@@ -20,7 +20,7 @@ const ToDoInput = () => {
                     onClick={() => {
                         dispatch (addToDo(
                             {
-                                id: uuid(),
+                                 id: uuid(),
                                 name: name
                             }
                         ));

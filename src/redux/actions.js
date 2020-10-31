@@ -1,4 +1,3 @@
-import React from 'react';
 
 export const Add_TODO = "Add_TODO";
 export const DELETE_TODO = "DELETE_TODO";

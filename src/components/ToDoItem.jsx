@@ -2,13 +2,14 @@ import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { deleteTodo, updateTodo } from '../redux/actions';
 
-function ToDoItem({ todo }) {
+function ToDoItem({ todo,todos}) {
     let dispatch = useDispatch();
     const [editable, setEditable] = useState(false);
     const [name, setName] = useState(todo.name);
     return (
         <div>
             <div className="row mx-2 align-items-center">
+            
                 <div> {todo.id.length > 1 ? todo.id[2] : todo.id}</div>
                 <div className="col-2">
                     {editable ? <input type="text"
